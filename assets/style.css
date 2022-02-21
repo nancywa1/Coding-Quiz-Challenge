@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+   
+
+
+}
+.container {
+    border: double;
+    border-color: lightblue;
+    width: 800px;
+    height: 500px;
+    /* position:relative; */
+}
+.header {
+    padding: 10px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    /* padding: 80px 50px; */
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+} 
+#question-container {
+/* position: absolute; */
+justify-content: center;
+align-items: center;
+padding: 80px 20px;
+}
+#question {
+    margin: 20px 50px;
+}
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2 auto);
+    gap: 10px;
+    margin: 20px 80px;
+}
+
+.btn{
+   background-color: darkblue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    /* text-decoration: none; */
+    
+
+
+}
+
+.btn:hover{
+    background-color: purple;
+    border-color: black;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msg1 {
+    display: none;
+    border-top: 2px solid gray;
+    justify-content: flex-end;
+    text-align: center;
+    position:relative;
+    padding-left: 40px;
+    /* margin-top: 0px; */
+
+}
+.msg2 {
+    display: none;
+    border-top: 2px solid gray;
+    justify-content: flex-end;
+    text-align: center;
+    position:relative;
+    padding-left: 40px;
+
+}
+.hide {
+    display: none;
+}
+
+.end {
+    display: none;
+  /* position: absolute; */
+
+    padding-left: 80px;
+
+}
+.viewscore {
+    display: none;
+}
+.viewScroe, .timerbox {
+    /* padding: 10px 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+}
+
+/* #endgame
+{
+
+} */

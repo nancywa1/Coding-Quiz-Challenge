@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz Challenge</title>
+    <link href="./assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div id="viewScroe">
+                <a href="/highscores.html" id="highscore-btn">View high scores</a>
+            </div>
+            <div id="timerbox">Timer: 00</div>
+            <!-- <a href="/highscores.html" id="highscore-btn">View high scores</a> -->
+        </div>
+       
+        <div id="home" class="flex-column flex-center ">
+
+            <h2> Coding Quiz Chanllenge</h2>
+            <P> Try to answer the following code-related questions within the time limit.
+                <br>
+                Keep in mind that incorrect ansers will penalize your score/time by ten seconds!
+            </P>
+
+            <!-- <a href="/game.html" class="btn">Start Quiz</a> -->
+
+        </div>
+        <div id="question-container" class="hide">
+
+            <div id="question"> Question</div>
+            <div id="answer-buttons" class="btn-grid">
+
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+
+            </div>
+        </div> 
+
+
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn"> Start Quiz</button>
+        </div>
+
+
+    <div class="end" id="endgame">
+        <h2>All Done!</h2>
+        <P>Your final score is </P>
+        <label for="name">Enter initials:</label>
+        <input type="text" id="nameinitials" name="initials">
+        <!-- <input type="button" id="submitname" value="Submit"> -->
+        <button id="submitname" class="submit"  onclick="myFunction()">Submit </button>
+    </div>
+    <div class="viewscore" id="scorelist">
+        <h2>High scores</h2>
+         <ul class="score-list" id="high-score-list">
+            <!-- <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> -->
+        </ul> 
+        <button id="go-back" class="back-btn"> Go back</button>
+        <button id="clear-scores" class="clear-btn "> Clear high scores</button>
+
+    </div>
+    <div class="msg1" id="correct">
+       <h2 class="correct">Correct</h2>
+
+    </div>
+    <div class="msg2" id="wrong">
+       <h2 class="correct">Wrong</h2>
+
+    </div>
+</div>
+    <script src="./assets/js.js"></script>
+</body>
+
+</html>
