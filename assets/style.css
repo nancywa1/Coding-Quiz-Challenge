@@ -2,8 +2,8 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
 
+body {
     padding: 0;
     margin: 0;
     display: flex;
@@ -11,10 +11,8 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-   
-
-
 }
+
 .container {
     border: double;
     border-color: lightblue;
@@ -22,31 +20,38 @@ body{
     height: 500px;
     /* position:relative; */
 }
+
 .header {
     padding: 10px 20px 0 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    
+
 }
+
 .flex-column {
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
     /* padding: 80px 50px; */
 }
+
 .flex-center {
     justify-content: center;
     align-items: center;
-} 
+}
+
 #question-container {
-/* position: absolute; */
-justify-content: center;
-align-items: center;
-padding: 80px 20px;
+    /* position: absolute; */
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
 }
+
 #question {
-    margin: 20px 50px;
+    margin: 20px 80px;
 }
+
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2 auto);
@@ -54,71 +59,76 @@ padding: 80px 20px;
     margin: 20px 80px;
 }
 
-.btn{
-   background-color: darkblue;
+.btn {
+    background-color: darkblue;
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
     outline: none;
-    /* text-decoration: none; */
-    
-
-
 }
 
-.btn:hover{
+.btn:hover {
     background-color: purple;
     border-color: black;
 }
-.controls{
+
+.controls {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .msg1 {
     display: none;
     border-top: 2px solid gray;
-    justify-content: flex-end;
+    justify-content: center;
     text-align: center;
-    position:relative;
+    position: relative;
     padding-left: 40px;
-    /* margin-top: 0px; */
-
 }
+
 .msg2 {
     display: none;
     border-top: 2px solid gray;
-    justify-content: flex-end;
+    justify-content: center;
     text-align: center;
-    position:relative;
+    position: relative;
     padding-left: 40px;
-
 }
+
 .hide {
     display: none;
 }
 
 .end {
     display: none;
-  /* position: absolute; */
-
     padding-left: 80px;
-
 }
+
+.active {
+    display: flex;
+}
+
+.end-active {
+    display: block;
+    margin-left: 20%;
+    padding-top: 10%;
+}
+
 .viewscore {
     display: none;
-}
-.viewScroe, .timerbox {
-    /* padding: 10px 15px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-
+    margin-left: 10%;
+    margin-top: 10%;
 }
 
-/* #endgame
-{
+.viewscore-active {
+    display: block;
+}
 
-} */
+#viewRes:hover {
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+.core-btn {
+    margin-top: 20%;
+}
